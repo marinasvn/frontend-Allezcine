@@ -1,0 +1,86 @@
+.row {
+  margin: 0 !important; }
+
+*[class^="col-"] {
+  padding: 0 !important; }
+
+#pub {
+  border: 1px solid black; }
+  #pub #slider {
+    width: 970px;
+    height: 350px;
+    /*margin: auto;*/
+    overflow: hidden;
+    /*overflow-x: scroll;*/
+    padding: 20px;
+    border: 1px solid #ededf0; }
+    #pub #slider ul {
+      padding: 0;
+      width: 2150px; }
+      #pub #slider ul li:nth-child(even) {
+        padding: 0 20px 0 20px; }
+      #pub #slider ul li {
+        list-style: none;
+        float: left; }
+        #pub #slider ul li img {
+          width: 170px;
+          height: 250px; }
+        #pub #slider ul li .descr {
+          width: 170px;
+          margin: 0; }
+          #pub #slider ul li .descr p:nth-child(1) {
+            text-align: center;
+            padding: 0; }
+          #pub #slider ul li .descr p:nth-child(2) {
+            text-align: left;
+            padding: 0;
+            margin: 0; }
+          #pub #slider ul li .descr p:nth-child(3) {
+            text-align: right;
+            padding: 0;
+            margin: 0; }
+  #pub #SoMe {
+    margin-top: 230px; }
+    #pub #SoMe ul {
+      width: 150px;
+      margin: 0;
+      padding: 0; }
+      #pub #SoMe ul li {
+        padding: 5px;
+        list-style: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: right; }
+        #pub #SoMe ul li a {
+          color: #fff;
+          padding-left: 20px; }
+          #pub #SoMe ul li a i {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            padding: 5px;
+            margin-left: 10px; }
+            #pub #SoMe ul li a i::before {
+              font-size: 0.8em; }
+      #pub #SoMe ul li:nth-child(1) {
+        background-color: #00b2f5;
+        margin-bottom: 5px; }
+        #pub #SoMe ul li:nth-child(1) a i {
+          color: #00b2f5; }
+      #pub #SoMe ul li:nth-child(2) {
+        background-color: #2e6992;
+        margin-bottom: 5px; }
+        #pub #SoMe ul li:nth-child(2) a i {
+          color: #2e6992; }
+      #pub #SoMe ul li:nth-child(3) {
+        background-color: #fe658e;
+        margin-bottom: 5px; }
+        #pub #SoMe ul li:nth-child(3) a i {
+          color: #fe658e; }
+      #pub #SoMe ul li:nth-child(4) {
+        background-color: #e25443; }
+        #pub #SoMe ul li:nth-child(4) a i {
+          color: #e25443; }
+
+/*# sourceMappingURL=style.css.map */
