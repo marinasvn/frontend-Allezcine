@@ -1,9 +1,13 @@
 .container{
 	margin: 0;
 	padding: 0;
+font-family: 'Open Sans', sans-serif;
 	#home{
 		color: white;
-		background-image: url("../images/home.jpg");
+		background-image: url("../images/lego.jpg");
+		background-size: 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
 		width: 100vw;
 		height: 320px;
 		.opacity{
@@ -12,51 +16,82 @@
 			width:100vw; 
 			height:320px; 
 			nav{
+				padding-top: 20px;
 				ul{
-					text-decoration: none;
+					list-style-type: none;
 					display:flex;
-					a{
-						text-decoration: none;
-						margin-left: 20px;
+					li{
+						.titre{
+							font-size: 40px;
+							font-weight: bold;
+							span{
+								color: #FF1A3B;
+							}
+						}
+						a{
+							margin-left: 20px;
+							font-size: 12px;
+							height: 20px;
+							&:hover{
+								color: #FF1A3B;
+							}
+							&:active{
+								color: #FF1A3B;
+							}
+						}
 					}
 				}
 			}
 			h2{
+				text-align: center;
+				font-weight: bold;
+				font-size: 40px;
 				span{
 					color: #FF1A3B;
 				}
-				text-align: center;
 			}
 			p{
 				text-align: center;
+				padding-top: 25px;
+				font-size: 12px;
 			}
 			input{
 				display:block;
 				margin: auto;
+				border: none;
+				background-color: #FF1A3B;
+				color: white;
+				font-size: 12px;
+				padding: 5px 5px 5px 5px;
+				border-radius: 2px;
 			}
 		}
 		#border{
+			p{
+				padding: 0px 0px 0px 25px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
 			display: flex;
 			width: 100vw;
 			background-color: #FF1A3D;
 			#first{
-				margin: 0;
+				margin-top: 10px;
 				background-color:black;
 				color: white;
 				font-size: 12px;
 				border:none;
 				width: 50px;
 				height: 25px;
-				margin-right: 20px;
+				margin-right: 5px;
 				margin-left: 20px;
 			}
 			#second{
-				margin: 0;
+				margin-top: 10px;
 				background-color:black;
 				color: white;
 				font-size: 12px;
 				border:none;
-				width: 60px;
 				height: 25px;
 			}
 		}
