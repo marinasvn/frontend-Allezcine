@@ -1,98 +1,138 @@
+@media (max-width: 576px) {
+	.jumbotron{
+		background-image: url("../images/shuter.jpg");
+	}
+}
+
 .container{
 	margin: 0;
 	padding: 0;
 font-family: 'Open Sans', sans-serif;
 	#home{
 		color: white;
-		background-image: url("../images/lego.jpg");
-		background-size: 100%;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		width: 100vw;
-		height: 320px;
-		.opacity{
-			background-color: rgba(0,0,0,0.7);
-			z-index: 999;
-			width:100vw; 
-			height:320px; 
-			nav{
-				padding-top: 20px;
-				ul{
-					list-style-type: none;
-					display:flex;
-					li{
-						.titre{
-							font-size: 40px;
-							font-weight: bold;
-							span{
-								color: #FF1A3B;
+		.jumbotron{
+			background-image: url("../images/lego.jpg");
+			background-size: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			width: 100vw;
+			height: 500px;
+			padding: 0;
+			.opacity{
+				background-color: rgba(0,0,0,0.7);
+				z-index: 999;
+				width:100vw; 
+				nav{
+					padding-top: 20px;
+					ul{
+						list-style-type: none;
+						display:flex;
+						li{
+							.titre{
+								font-size: 40px;
+								font-weight: bold;
+								span{
+									color: #FF1A3B;
+								}
 							}
-						}
-						a{
-							margin-left: 20px;
-							font-size: 12px;
-							height: 20px;
-							&:hover{
-								color: #FF1A3B;
-							}
-							&:active{
-								color: #FF1A3B;
+							a{
+								margin-left: 20px;
+								// margin-top: -30px;
+								font-size: 12px;
+								color: white;
+								background-color:transparent;
+								&:hover{
+									background-color: #FF1A3B;
+									color: white;
+
+								}
+								&:active{
+									color: #FF1A3B;
+								}
 							}
 						}
 					}
+					.dropdown-menu{
+						a{
+							color:black;
+							margin-top: 0;
+							padding:0;
+						}
+					}
 				}
-			}
-			h2{
-				text-align: center;
-				font-weight: bold;
-				font-size: 40px;
-				span{
-					color: #FF1A3B;
+				h2{
+					text-align: center;
+					font-weight: bold;
+					font-size: 40px;
+					color: white;
+					span{
+						color: #FF1A3B;
+					}
 				}
-			}
-			p{
-				text-align: center;
-				padding-top: 25px;
-				font-size: 12px;
-			}
-			input{
-				display:block;
-				margin: auto;
-				border: none;
-				background-color: #FF1A3B;
-				color: white;
-				font-size: 12px;
-				padding: 5px 5px 5px 5px;
-				border-radius: 2px;
-			}
-		}
-		#border{
-			p{
-				padding: 0px 0px 0px 25px;
-				margin-top: 10px;
-				margin-bottom: 5px;
-			}
-			display: flex;
-			width: 100vw;
-			background-color: #FF1A3D;
-			#first{
-				margin-top: 10px;
-				background-color:black;
-				color: white;
-				font-size: 12px;
-				border:none;
-				width: 50px;
-				height: 25px;
-				margin-right: 5px;
-				margin-left: 20px;
-			}
-			#second{
-				margin-top: 10px;
-				background-color:black;
-				color: white;
-				font-size: 12px;
-				border:none;
-				height: 25px;
+				h3{
+					margin-top: 75px;
+					text-align: center;
+					font-weight: bold;
+					font-size: 40px;
+					color: white;
+					span{
+						color: #FF1A3B;
+					}
+				}
+				.quote{
+					text-align: center;
+					padding-top: 25px;
+					font-size: 12px;
+					font-family: 'Raleway', sans-serif;
+					letter-spacing: 1px;
+				}
+				p{
+					text-align: center;
+					padding-top: 25px;
+					font-size: 12px;
+					letter-spacing: 1px;
+				}
+				input{
+					display:block;
+					margin: auto;
+					border: none;
+					background-color: #FF1A3B;
+					color: white;
+					font-size: 12px;
+					padding: 5px 5px 5px 5px;
+					border-radius: 2px;
+				}
+				#border{
+					margin-top: 155px;
+					display: flex;
+					width: 100vw;
+					background-color: #FF1A3D;
+					p{
+						padding: 0px 0px 0px 25px;
+						margin-top: 10px;
+						margin-bottom: 5px;
+					}
+					#first{
+						margin-top: 5px;
+						background-color:black;
+						color: white;
+						font-size: 12px;
+						border:none;
+						width: 50px;
+						height: 25px;
+						margin-right: 5px;
+						margin-left: 20px;
+					}
+					#second{
+						margin-left: 0;
+						margin-top: 5px;
+						background-color:black;
+						color: white;
+						font-size: 12px;
+						border:none;
+						height: 25px;
+					}
+				}
 			}
 		}
 	}
