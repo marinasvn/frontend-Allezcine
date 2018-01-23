@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
 .row {
   margin: 0 !important; }
@@ -94,18 +94,31 @@ body {
             margin: 0; }
 
 .plus {
-  background-color: red;
+  background-color: #FF1A3B;
   width: 150px;
   height: 30px;
   display: block;
   margin: auto !important;
   border: 0;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 .title {
   font-family: "Open Sans Condensed", sans-serif;
-  border-left: 3px solid red;
+  border-left: 3px solid #FF1A3B;
   margin-bottom: 20px !important; }
+
+#movies div:nth-child(n+13) {
+  display: none; }
+
+#moinsFilms {
+  display: none; }
+
+#series div:nth-child(n+13) {
+  display: none; }
+
+#moinsSeries {
+  display: none; }
 
 #featured-movies, #featured-series {
   margin-top: 50px !important; }
@@ -119,44 +132,56 @@ body {
       height: 40px; }
       #featured-movies .content .filtres li, #featured-series .content .filtres li {
         list-style: none;
-        margin-right: 5px; }
-        #featured-movies .content .filtres li a, #featured-series .content .filtres li a {
-          padding: 10px 20px;
-          background-color: #ededf0;
-          color: #000; }
-        #featured-movies .content .filtres li .active, #featured-series .content .filtres li .active {
-          background-color: red;
-          color: #fff; }
-    #featured-movies .content #moviesOne, #featured-movies .content #moviesTwo, #featured-series .content #moviesOne, #featured-series .content #moviesTwo {
+        margin-right: 5px;
+        padding: 10px 20px;
+        background-color: #ededf0;
+        color: #000;
+        cursor: pointer; }
+        #featured-movies .content .filtres li:hover, #featured-series .content .filtres li:hover {
+          background-color: #FF1A3B; }
+      #featured-movies .content .filtres .active, #featured-series .content .filtres .active {
+        background-color: #FF1A3B !important;
+        color: #fff; }
+    #featured-movies .content #movies, #featured-movies .content #series, #featured-series .content #movies, #featured-series .content #series {
       margin: auto;
       width: 1050px;
-      height: 700px;
-      padding: 0; }
-      #featured-movies .content #moviesOne li:nth-child(even), #featured-movies .content #moviesTwo li:nth-child(even), #featured-series .content #moviesOne li:nth-child(even), #featured-series .content #moviesTwo li:nth-child(even) {
-        padding: 0 5px 0 5px; }
-      #featured-movies .content #moviesOne li:nth-child(n+5), #featured-movies .content #moviesTwo li:nth-child(n+5), #featured-series .content #moviesOne li:nth-child(n+5), #featured-series .content #moviesTwo li:nth-child(n+5) {
-        margin-bottom: 20px; }
-      #featured-movies .content #moviesOne li, #featured-movies .content #moviesTwo li, #featured-series .content #moviesOne li, #featured-series .content #moviesTwo li {
-        list-style: none;
-        float: left; }
-        #featured-movies .content #moviesOne li img, #featured-movies .content #moviesTwo li img, #featured-series .content #moviesOne li img, #featured-series .content #moviesTwo li img {
-          width: 170px;
-          height: 250px; }
-        #featured-movies .content #moviesOne li .descr, #featured-movies .content #moviesTwo li .descr, #featured-series .content #moviesOne li .descr, #featured-series .content #moviesTwo li .descr {
-          width: 170px;
+      height: auto;
+      padding: 0;
+      display: flex !important;
+      flex-wrap: wrap; }
+      #featured-movies .content #movies img, #featured-movies .content #series img, #featured-series .content #movies img, #featured-series .content #series img {
+        width: 170px;
+        height: 250px;
+        margin: 0 2.5px 0 2.5px; }
+      #featured-movies .content #movies .descr, #featured-movies .content #series .descr, #featured-series .content #movies .descr, #featured-series .content #series .descr {
+        width: 170px;
+        margin: 0; }
+        #featured-movies .content #movies .descr p:nth-child(1), #featured-movies .content #series .descr p:nth-child(1), #featured-series .content #movies .descr p:nth-child(1), #featured-series .content #series .descr p:nth-child(1) {
+          text-align: center;
+          padding: 0; }
+        #featured-movies .content #movies .descr p:nth-child(2), #featured-movies .content #series .descr p:nth-child(2), #featured-series .content #movies .descr p:nth-child(2), #featured-series .content #series .descr p:nth-child(2) {
+          text-align: left;
+          padding: 0;
           margin: 0; }
-          #featured-movies .content #moviesOne li .descr p:nth-child(1), #featured-movies .content #moviesTwo li .descr p:nth-child(1), #featured-series .content #moviesOne li .descr p:nth-child(1), #featured-series .content #moviesTwo li .descr p:nth-child(1) {
-            text-align: center;
-            padding: 0; }
-          #featured-movies .content #moviesOne li .descr p:nth-child(2), #featured-movies .content #moviesTwo li .descr p:nth-child(2), #featured-series .content #moviesOne li .descr p:nth-child(2), #featured-series .content #moviesTwo li .descr p:nth-child(2) {
-            text-align: left;
-            padding: 0;
-            margin: 0; }
-          #featured-movies .content #moviesOne li .descr p:nth-child(3), #featured-movies .content #moviesTwo li .descr p:nth-child(3), #featured-series .content #moviesOne li .descr p:nth-child(3), #featured-series .content #moviesTwo li .descr p:nth-child(3) {
-            text-align: right;
-            padding: 0;
-            margin: 0; }
+        #featured-movies .content #movies .descr p:nth-child(3), #featured-movies .content #series .descr p:nth-child(3), #featured-series .content #movies .descr p:nth-child(3), #featured-series .content #series .descr p:nth-child(3) {
+          text-align: right;
+          padding: 0;
+          margin: 0; }
 
+/*------------*/
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  transform: translate3d(0px, 38px, 0px) !important; }
+  .dropdown-menu .dropdown-item {
+    background-color: #ededf0;
+    margin-top: 3px; }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #FF1A3B; }
+
+/*-----------------*/
 #contact {
   margin-top: 50px !important;
   padding: 0; }
@@ -164,7 +189,7 @@ body {
     display: flex;
     justify-content: space-between; }
     #contact form input[type="submit"] {
-      background-color: red;
+      background-color: #FF1A3B;
       width: 150px;
       height: 30px;
       display: block;

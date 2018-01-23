@@ -1,9 +1,10 @@
 $gris-clair: #ededf0;
-$title: 'Open Sans Condensed', sans-serif;
-$text: 'Open Sans', sans-serif;
+$red: #FF1A3B;
+$font-cond: 'Open Sans Condensed', sans-serif;
+$font-normal: 'Open Sans', sans-serif;
 
 body {
-    font-family: $text;
+    font-family: $font-cond;
 }
 
 .row {margin: 0 !important;}
@@ -88,20 +89,27 @@ body {
 } // fin de section #pub
 
 .plus {
-    background-color: red;
+    background-color: $red;
     width: 150px;
     height: 30px;
     display: block;
     margin: auto !important;
     border: 0;
     color: #fff;
+    cursor: pointer;
 }
 
 .title {
-    font-family: $title;
-    border-left: 3px solid red;
+    font-family: $font-cond;
+    border-left: 3px solid $red;
     margin-bottom: 20px !important;
 }
+
+#movies div:nth-child(n+13) {display: none;}
+#moinsFilms {display: none;}
+
+#series div:nth-child(n+13) {display: none;}
+#moinsSeries {display: none;}
 
 #featured-movies, #featured-series {
     margin-top: 50px !important;
@@ -116,35 +124,32 @@ body {
              li {
                 list-style: none;
                 margin-right: 5px;
-                 a {
-                     padding: 10px 20px;
-                     background-color: $gris-clair;
-                     color: #000;
-                 }
-                 .active {
-                     background-color: red;
-                     color: #fff;
+                padding: 10px 20px;
+                background-color: $gris-clair;
+                color: #000;
+                 cursor: pointer;
+                 
+                 &:hover {
+                     background-color: $red;
                  }
              }
+            .active {
+                     background-color: $red !important;
+                     color: #fff;
+                 }
         }
-        
-        #moviesOne, #moviesTwo {
+        #movies, #series {
             margin: auto;
             width: 170px*6 + 5px*6;
-            height: 350*2px;
+            height: auto;
             padding: 0;
-            li:nth-child(even) {
-                   padding: 0 5px 0 5px;
-               }
-            li:nth-child(n+5) {
-                margin-bottom: 20px;
-            }
-           li {
-            list-style: none;
-            float: left;
-                img {
+            display: flex !important;
+            flex-wrap: wrap;
+            
+            img {
                 width: 170px;
                 height: 250px;
+                margin: 0 2.5px 0 2.5px;
                 }
                .descr {
                    width: 170px;
@@ -153,13 +158,27 @@ body {
                    p:nth-child(2) {text-align: left; padding: 0; margin: 0;}
                    p:nth-child(3) {text-align: right; padding: 0; margin: 0;}
                }
-          } 
         }
-        
         
     }
 }
 
+/*------------*/
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    transform: translate3d(0px, 38px, 0px) !important;
+    .dropdown-item {
+        background-color: $gris-clair;
+        margin-top: 3px;
+        &:hover {
+            background-color: $red;
+        }
+    }
+}
+/*-----------------*/
 
 #contact {
     margin-top: 50px !important;
@@ -170,7 +189,7 @@ body {
         justify-content: space-between;
         
         input[type="submit"] {
-            background-color: red;
+            background-color: $red;
             width: 150px;
             height: 30px;
             display: block;

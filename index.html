@@ -114,127 +114,222 @@
              <h2 class="title col-lg-10 m-auto">FEATURED MOVIES</h2>
          </div>
           <ul class="filtres" id="filtresOne">
-              <li><a href="" class="active">All</a></li>
-              <li><a href="">Actions</a></li>
-              <li><a href="">Policiers</a></li>
-              <li><a href="">...</a></li>
+              <li id="filter-all" class="active">All</li>
+              <li id="filter-actions">Actions</li>
+              <li id="filter-policiers">Policiers</li>
+              <li class="nav-item dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown">Autres</div>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item" href="#">Comédie</div>
+                    <div class="dropdown-item" href="#">Drame</div>
+                    <div class="dropdown-item" href="#">Fiction</div>
+                    <div class="dropdown-item" href="#">Horreur</div>
+                    <div class="dropdown-item" href="#">Thriller</div>
+                    <div class="dropdown-item" href="#">Documentaire</div>
+                </div>
+              </li>
           </ul>
           
-           <ul id="moviesOne">
-               <li>
-               <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+          <div id="movies">
+               <div class="all actions">
+                   <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all actions">
+                   <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/inception-2010-scifi.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all comedie">
+                   <img src="./assets/img/inception-2010-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all policiers comedie">
+                   <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all thriller">
+                   <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all thriller">
+                   <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/seven-1995-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all horror">
+                   <img src="./assets/img/seven-1995-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all comedie">
+                   <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all drama">
+                   <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all drama">
+                   <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all doc">
+                   <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all doc">
+                   <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-           </ul>
-           
-           <!--<ul id="moviesTwo">
-               <li><img src="./assets/img/WhatWeDoInTheShadows-2014-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/zoolander-2001-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/inception-2010-scifi.jpg" alt=""></li>
-               <li><img src="./assets/img/intouchables-2011-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt=""></li>
-               <li><img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt=""></li>
-               <li><img src="./assets/img/seven-1995-thriller.jpg" alt=""></li>
-               <li><img src="./assets/img/shutterisland-2010-thriller.jpg" alt=""></li>
-               <li><img src="./assets/img/starwarsempire-1980-scifi.jpg" alt=""></li>
-               <li><img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/swissarmyman-2016-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/thefall-2006-dramatique.jpg" alt=""></li>
-           </ul>-->
+               
+               
+               <div class="all actions">
+                   <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all actions">
+                   <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all comedie">
+                   <img src="./assets/img/inception-2010-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all policiers comedie">
+                   <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all thriller">
+                   <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all thriller">
+                   <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all horror">
+                   <img src="./assets/img/seven-1995-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all comedie">
+                   <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all drama">
+                   <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all drama">
+                   <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all doc">
+                   <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all doc">
+                   <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+           </div>
+          
            
            <button id="plusFilms" class="plus">PLUS DES FILMS</button>
+           <button id="moinsFilms" class="plus">MOINS DES FILMS</button>
        </div>
    </section>
 
@@ -243,128 +338,222 @@
          <div class="row">
              <h2 class="title col-lg-10 m-auto">FEATURED SERIES TV</h2>
          </div>
-          <ul class="filtres" id="filtresOne">
-              <li><a href="" class="active">All</a></li>
-              <li><a href="">Actions</a></li>
-              <li><a href="">Policiers</a></li>
-              <li><a href="">...</a></li>
+          <ul class="filtres" id="filtresTwo">
+              <li id="filter-all-2"  class="active">All</li>
+              <li id="filter-actions-2">Actions</li>
+              <li id="filter-policiers-2">Policiers</li>
+              <li class="nav-item dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown">Autres</div>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item" href="#">Comédie</div>
+                    <div class="dropdown-item" href="#">Drame</div>
+                    <div class="dropdown-item" href="#">Fiction</div>
+                    <div class="dropdown-item" href="#">Horreur</div>
+                    <div class="dropdown-item" href="#">Thriller</div>
+                    <div class="dropdown-item" href="#">Documentaire</div>
+                </div>
+              </li>
           </ul>
           
-           <ul id="moviesOne">
-               <li>
-               <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+           <div id="series">
+               <div class="all actions">
+                   <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all actions">
+                   <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/inception-2010-scifi.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all comedie">
+                   <img src="./assets/img/inception-2010-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all policiers comedie">
+                   <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all thriller">
+                   <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all thriller">
+                   <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/seven-1995-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all horror">
+                   <img src="./assets/img/seven-1995-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all comedie">
+                   <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all drama">
+                   <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all drama">
+                   <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all doc">
+                   <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-               <li>
-               <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
-               <div class="row descr">
-                   <p class="col-lg-12">Batman</p>
-                   <p class="col-lg-6">2017</p>
-                   <p class="col-lg-6">Comedie</p>
+               <div class="all doc">
+                   <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
                </div>
-               </li>
-           </ul>
+               
+               
+               <div class="all actions">
+                   <img src="./assets/img/batmanmovie-2017-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all actions">
+                   <img src="./assets/img/hostel-2005-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all comedie">
+                   <img src="./assets/img/inception-2010-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all policiers comedie">
+                   <img src="./assets/img/intouchables-2011-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all thriller">
+                   <img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all thriller">
+                   <img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all horror">
+                   <img src="./assets/img/seven-1995-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all comedie">
+                   <img src="./assets/img/shutterisland-2010-thriller.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all drama">
+                   <img src="./assets/img/starwarsempire-1980-scifi.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all drama">
+                   <img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all doc">
+                   <img src="./assets/img/swissarmyman-2016-comedie.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+               <div class="all doc">
+                   <img src="./assets/img/thefall-2006-dramatique.jpg" alt="">
+                   <div class="row descr">
+                       <p class="col-lg-12">Batman</p>
+                       <p class="col-lg-6">2017</p>
+                       <p class="col-lg-6">Comedie</p>
+                   </div>
+               </div>
+           </div>
            
-           <!--<ul id="moviesTwo">
-               <li><img src="./assets/img/WhatWeDoInTheShadows-2014-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/zoolander-2001-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/inception-2010-scifi.jpg" alt=""></li>
-               <li><img src="./assets/img/intouchables-2011-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/lepatientanglais-1996-dramatique.jpg" alt=""></li>
-               <li><img src="./assets/img/lesdeuxtours-2002-aventure.jpg" alt=""></li>
-               <li><img src="./assets/img/seven-1995-thriller.jpg" alt=""></li>
-               <li><img src="./assets/img/shutterisland-2010-thriller.jpg" alt=""></li>
-               <li><img src="./assets/img/starwarsempire-1980-scifi.jpg" alt=""></li>
-               <li><img src="./assets/img/Survivestyle5-2004-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/swissarmyman-2016-comedie.jpg" alt=""></li>
-               <li><img src="./assets/img/thefall-2006-dramatique.jpg" alt=""></li>
-           </ul>-->
-           
-           <button id="plusFilms" class="plus">PLUS DES SERIES</button>
+           <button id="plusSeries" class="plus">PLUS DES SERIES</button>
+           <button id="moinsSeries" class="plus">MOINS DES SERIES</button>
        </div>
    </section>
    
@@ -372,10 +561,10 @@
              <h2 class="title col-lg-10 m-auto">CONTACT US</h2>
       <div class="col-lg-8 m-auto">
            <form action="" class="row">
-               <input type="text" placeholder="FIRST NAME" class="mb-2" maxlength="55" size="52">
-               <input type="text" placeholder="LAST NAME" class="mb-2" maxlength="55" size="52">
-               <input type="email" placeholder="EMAIL" class="mb-2" maxlength="55" size="52">
-               <input type="text" placeholder="SUBJECT" class="mb-2" maxlength="55" size="52">
+               <input type="text" placeholder="FIRST NAME" class="mb-2" maxlength="67" size="67">
+               <input type="text" placeholder="LAST NAME" class="mb-2" maxlength="67" size="67">
+               <input type="email" placeholder="EMAIL" class="mb-2" maxlength="67" size="67">
+               <input type="text" placeholder="SUBJECT" class="mb-2" maxlength="67" size="67">
                <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE" class="col-lg-12 mb-4"></textarea>
                <input type="submit" value="SEND MESSAGE">
            </form>
@@ -385,5 +574,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
