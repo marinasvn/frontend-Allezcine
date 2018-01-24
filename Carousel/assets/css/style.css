@@ -30,14 +30,15 @@ h2 {
     height: 575px; }
 
 .overlay {
+  margin-left: 25%;
   color: #fff;
   position: absolute;
   z-index: 12;
   top: 40%;
-  width: 100vw;
+  width: 50vw;
   text-align: center; }
   .overlay span {
-    color: #FF1A3A; }
+    color: #FF1A3D; }
   .overlay h3 {
     color: white;
     font-size: 50px;
@@ -47,7 +48,7 @@ h2 {
     font-size: 12px;
     letter-spacing: 2px; }
   .overlay input {
-    background-color: #FF1A3A;
+    background-color: #FF1A3D;
     color: white;
     border: none;
     border-radius: 2px;
@@ -62,17 +63,17 @@ h2 {
   .lay .compose {
     color: yellow; }
   .lay span {
-    color: #FF1A3A; }
+    color: #FF1A3D; }
 
 .last a {
   background-color: transparent !important; }
 
 .nav-item #act {
-  color: #FF1A3A !important;
+  color: #FF1A3D !important;
   background-color: transparent !important; }
 .nav-item a {
   padding: 5px;
-  background-color: #FF1A3A;
+  background-color: #FF1A3D;
   margin-right: 5px;
   color: white !important; }
 .nav-item .dropdown-menu a {

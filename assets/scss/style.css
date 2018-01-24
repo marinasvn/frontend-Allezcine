@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between; }
   #shop .symbol h2 {
-    color: yellow; }
+    border-left: 3px solid red;
+    margin-left: 25px; }
   #shop .symbol div {
     display: flex; }
     #shop .symbol div .symb1 {
@@ -27,16 +28,23 @@
 #shop .description {
   width: 175px;
   margin: 0;
-  margin-left: 5px; }
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: #D9D9D9;
+  height: 40px;
+  font-size: 12px;
+  padding: 0 10px; }
   #shop .description p:nth-child(1) {
     text-align: center;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
   #shop .description p:nth-child(2) {
     padding: 0; }
   #shop .description p:nth-child(3) {
-    padding: 0;
+    padding: 0 10px;
     text-align: right;
-    color: #FF1A3D; }
+    color: #FF1A3D;
+    padding-right: 2px; }
 #shop .ba {
   padding-left: 0; }
   #shop .ba img {

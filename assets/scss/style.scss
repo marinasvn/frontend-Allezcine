@@ -1,3 +1,42 @@
+@media(max-width:460px){
+	.gallery{
+		div{
+			display: flex;
+			flex-direction: column;
+			img{
+				margin: 0 auto !important;
+			width: 400px !important;
+			height: 500px!important;
+			}
+		}
+
+	}
+	.description{
+		widtht: 400px !important;
+		margin: 0;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		background-color: #D9D9D9;
+		height: 40px;
+		font-size: 12px;
+		padding: 0 10px;
+		p:nth-child(1){
+			text-align:center;
+			padding: 0;
+			margin-bottom: 0;
+		}
+		p:nth-child(2){
+			padding: 0;
+		}
+		p:nth-child(3){
+			padding:0 10px;
+			text-align: right;
+			color: #FF1A3D;
+			padding-right: 2px;
+		}
+	}
+}
+
 #shop{
 	.symbol{
 		display: flex;
@@ -68,6 +107,7 @@
 			height: 400px;
 		}
 		.info{
+			margin-top: -7px;
 			padding-left: 5px;
 			background-color:#151515;
 			color: white;
