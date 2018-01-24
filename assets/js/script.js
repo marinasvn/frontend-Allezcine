@@ -85,7 +85,13 @@ $(document).ready(function () {
 });
 
 
-
+// modal on load
+$(window).on('load',function(){
+    $("#modalLoad").css('display','block');
+    $("#modalLoad #blur a").click(function() {
+        $("#modalLoad").css('display','none');
+    });
+});
 
 
 
