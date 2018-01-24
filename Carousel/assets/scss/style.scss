@@ -1,0 +1,162 @@
+// MEDIA QUERIES
+@media(max-width:460px){
+	.carousel-item{
+		img{
+			width: 100vw !important;
+			height: 100vh!important;
+		}
+	}
+	.nav-item{
+		a{
+		background-color:transparent !important;
+		}
+	}
+ 	h3{
+ 		color:white;
+ 		font-size: 50px;
+ 		font-weight: bold;
+ 	}
+ 	.quote{
+
+ 	}
+ 	.searching{
+ 		margin-left: 75px !important;
+ 	}
+}
+
+// CSS CLASSIQUE
+h2{
+	color:white;
+	font-family: 'Anton', sans-serif;
+	font-size: 55px;
+}
+.jumbotron{
+	padding: 0;
+	nav{
+		position: absolute;
+    	width:100%;
+    	z-index:10;
+    	max-width:100%;
+	}
+	.carousel-item{
+		img{
+			width: 100vw;
+			height: 575px;
+		}
+	}
+}
+.overlay { 
+	color:#fff;
+  	position:absolute;
+  	z-index:12;
+  	top:40%;
+ 	width:100vw;
+ 	text-align:center;
+ 	span{
+ 		color:#FF1A3A;
+ 	}
+ 	h3{
+ 		color:white;
+ 		font-size: 50px;
+ 		font-weight: bold;
+ 	}
+ 	.quote{
+ 		font-family:'Raleway', sans-serif;
+ 		font-size: 12px;
+ 		letter-spacing: 2px;
+
+ 	}
+ 	input{
+ 		background-color: #FF1A3A;
+ 		color: white;
+ 		border: none;
+ 		border-radius: 2px;
+ 		font-size: 12px;
+ 		padding: 5px 2px 5px 2px;
+ 	}
+}
+.lay{
+	.compose{
+		color: yellow;
+	}
+  	position:absolute;
+  	z-index:12;
+ 	width:100%;
+ 	text-align:center;
+ 	span{
+ 		color:#FF1A3A;
+ 	}
+
+}
+
+.last{
+	a{
+		background-color:transparent !important;
+	}
+}
+.nav-item{	
+	#act{
+		color: #FF1A3A !important;
+		background-color: transparent !important;
+	}
+	a{
+		padding: 5px;
+		background-color: #FF1A3A;
+		margin-right: 5px;
+		color: white!important;
+	}
+	.dropdown-menu{
+		a{ 
+			background-color: white;
+			color: black!important;
+		}
+	}
+}
+
+.opacity{
+	width: 101vw;
+	height: 101vh;
+	background-color: rgba(0,0,0,0.7) !important;
+	z-index: 999;
+	position:absolute;
+
+}
+
+.searching{
+	margin-left: 180px;
+	border-radius: 50px;
+	width:200px;
+	height: 25px;
+	background-color: black!important;
+	border: none;
+}
+#border{
+	display: flex;
+	background-color: #FF1A3D;
+	p{
+		padding: 0px 0px 0px 25px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		color: white
+	}
+					#first{
+						margin-top: 5px;
+						background-color:black;
+						color: white;
+						font-size: 12px;
+						border:none;
+						width: 50px;
+						height: 25px;
+						margin-right: 5px;
+						margin-left: 20px;
+					}
+					#second{
+						margin-left: 0;
+						margin-top: 5px;
+						background-color:black;
+						color: white;
+						font-size: 12px;
+						border:none;
+						height: 25px;
+					}
+				}
