@@ -1,0 +1,88 @@
+body {
+  margin-top: 50px;
+  background-color: #0D0D0D;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif; }
+  body #sub h3 {
+    text-align: center;
+    color: red; }
+  body #sub div {
+    display: flex;
+    margin-bottom: 50px; }
+    body #sub div input {
+      width: 500px;
+      margin: 0 10px 0 485px;
+      align-items: center;
+      border-radius: 2px; }
+    body #sub div button {
+      margin-right: 350px;
+      background-color: red;
+      border-color: red;
+      border-radius: 2px; }
+  body .first h3 {
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid #242424;
+    color: #D1D1D1;
+    letter-spacing: 2px; }
+  body .first ul {
+    list-style-type: none;
+    padding: 0;
+    color: #8D8D8D; }
+  body .second h3 {
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid #242424;
+    color: #D1D1D1;
+    letter-spacing: 2px; }
+  body .second ul {
+    list-style-type: none;
+    padding: 0;
+    color: #8D8D8D; }
+  body .third {
+    margin-left: -50px; }
+    body .third h3 {
+      padding-bottom: 8px;
+      font-size: 14px;
+      border-bottom: 2px solid #242424;
+      color: #D1D1D1;
+      letter-spacing: 2px; }
+    body .third .case {
+      display: flex; }
+      body .third .case p {
+        color: #D1D1D1;
+        background-color: #242424;
+        margin-right: 5px;
+        padding: 3px; }
+    body .third .case1 {
+      margin-top: -10px;
+      display: flex; }
+      body .third .case1 p {
+        color: #D1D1D1;
+        background-color: #242424;
+        margin-right: 5px;
+        padding: 3px; }
+  body .fourth h3 {
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid #242424;
+    color: #D1D1D1;
+    letter-spacing: 2px; }
+  body .fourth img {
+    width: 100px;
+    height: 50px;
+    padding-bottom: 5px; }
+  body .fifth h3 {
+    margin-top: -17px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #242424;
+    color: white;
+    font-weight: bold; }
+    body .fifth h3 span {
+      color: red; }
+  body .fifth .one img {
+    width: 60px;
+    height: 80px;
+    padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
