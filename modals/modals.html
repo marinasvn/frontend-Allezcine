@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href="./modals.css">
+</head>
+<body>
+
+<div class="container">
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" id="close">&times;</button>
+
+        
+          <h3>ALLEZCINE</h3>
+				<p>Accédez à votre compte</p>
+
+					<input type="text" placeholder="Login" name="login" id="login" />
+					<input type="text" placeholder="Password" name="pass" id="pass" />
+					
+					<input type="email" placeholder="Email" name="email" id="email" />
+					
+					<p id="forgot">Forgot password?</p>
+					
+					<label for="connect">
+					   <input type="checkbox" id="connect">
+					   Stay connected
+					</label>
+					
+					<label for="conditions">
+					   <input type="checkbox" id="conditions">
+					   J'accepte les condition gnerales
+					</label>
+					
+					<div id="btns">
+                        <button class="submit" id="signIn">Sign in</button>
+                        <button id="new-account">Créer un compte</button>
+                        
+                        <button class="submit" id="signUp">Sign up</button>
+                        
+                        <button id="newPass">Send me a new password</button>
+					</div>
+        
+
+      </div> <!-- Fin Modal content-->
+      
+    </div>
+  </div>
+  
+  <!-- Modal 2 -->
+  <div id="modalLoad">
+        <div id="blur">
+            <h3>ALLEZCINE</h3>
+				<p>Accédez au site</p>
+
+                        <a href="https://github.com/" id="plus18">J'ai 18 ans ou plus</a>
+                        <a href="https://www.google.be/" id="moins18" target="_blank">J'ai moins de 18 ans</a>
+        </div>
+  </div>
+  
+</div>
+
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./script-in-popup.js"></script>
+</body>
+</html>

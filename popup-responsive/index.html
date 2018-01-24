@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Popup d'inscription</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	</head>
+	<body>
+
+		<!-- LE CONTENU DE LA POPUP -->
+
+		<div class="modal blur-effect" id="popup">
+			<div class="popup-content">
+				<h3>ALLEZCINE</h3>
+				<p>Accédez à votre compte</p>
+				<div>
+					<input type="text" placeholder="Login" name="login" id="login" />
+					<input type="text" placeholder="Password" name="pass" id="pass" />
+					
+					<a href="" id="forgot">Forgot password?</a>
+					
+					<label for="connect">
+					   <input type="checkbox" id="connect">
+					   Stay connected
+					</label>
+					
+					<label for="conditions">
+					   <input type="checkbox" id="conditions">
+					   J'accepte les condition gnerales
+					</label>
+					
+					<div id="btns">
+                        <button class="submit" id="signIn">Sign in</button>
+                        <a href="" id="new-account">Créer un compte</a>
+                        
+                        <button class="submit" id="signUp">Sign up</button>
+					</div>
+					
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FIN DE LA POPUP -->
+		
+		<!-- CONTENU DE LA PAGE -->
+
+		<div class="container">
+
+			<div class="content">
+				
+				<button class="popup-button" data-modal="popup">Je m'inscris !</button>
+
+			</div><!-- .content -->
+				
+		</div><!-- .container -->
+
+		<!-- FIN DU COTENU DE LA PAGE -->
+		
+		<!-- Le script qui crée la popup -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/script-in-popup.js"></script>
+
+		<!-- Pour l'effet blur -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<!--<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>-->
+		<!--<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>-->
+	</body>
+</html>
