@@ -26,6 +26,7 @@ body{
 		}
 	}
 	.first{
+		margin-left: 25px;
 		h3{
 			padding-bottom: 8px;
 			font-size: 14px;
@@ -53,10 +54,9 @@ body{
 			padding: 0;
 			color: #8D8D8D;
 		}
-
 	}
 	.third{
-		margin-left: -50px;
+		margin-left: -65px;
 		h3{
 			padding-bottom: 8px;
 			font-size: 14px;
@@ -71,6 +71,7 @@ body{
 				background-color:#242424;
 				margin-right: 5px;
 				padding: 3px;
+				font-size: 10px;
 			}
 		}
 		.case1{
@@ -81,6 +82,7 @@ body{
 				background-color:#242424;
 				margin-right: 5px;
 				padding: 3px;
+				font-size: 10px;
 			}
 		}
 	}
@@ -94,7 +96,7 @@ body{
 		}
 		img{
 			width: 80px;
-			height: 30px;
+			height: 31px;
 			padding-bottom: 5px;
 			margin-top: 5px;
 		}
@@ -150,6 +152,7 @@ body{
 		}
 	}
 }
+
 
 @media(max-width:460px){
 	body{
