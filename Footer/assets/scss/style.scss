@@ -13,7 +13,7 @@ body{
 			margin-bottom: 50px;
 			input{
 				width: 500px;
-				margin: 0 10px 0 485px;
+				margin: 0 10px 0 450px;
 				align-items: center;
 				border-radius: 2px;
 			}
@@ -93,9 +93,18 @@ body{
 			letter-spacing: 2px	
 		}
 		img{
-			width: 100px;
-			height: 50px;
+			width: 80px;
+			height: 30px;
 			padding-bottom: 5px;
+			margin-top: 5px;
+		}
+		.text{
+			padding-right: 0;
+			p{
+				padding-right: 0;
+				margin: 0;
+				color: #8D8D8D;
+			}
 		}		
 	}
 	.fifth{
@@ -115,6 +124,66 @@ body{
 				height: 80px;
 				padding:0;
 			}
+		}
+	}
+	.sixth{
+		margin-top: 50px;
+		height: 50px;
+		border-top: 1px solid #242424;
+		border-bottom: 1px solid #242424;
+	}
+	.seventh{
+		color: #D1D1D1;
+		text-align: center;
+		.icon{
+			margin-left: 12px;
+			i{
+				&:nth-child(1){
+					padding-right: 10px;
+
+				}
+				margin-right: 10px;
+				color: #D1D1D1;
+				border: 1px solid #D1D1D1;
+				padding: 5px;
+			}
+		}
+	}
+}
+
+@media(max-width:460px){
+	body{
+		#sub{
+			h3{
+				margin-left: 50px;
+				text-align: left;
+			}
+			input{
+				margin-left: 25px !important;
+			}
+		}
+		.first{
+			margin-left: 25px;
+		}
+		.second{
+			margin-left: 25px;
+		}
+		.third{
+			margin-left: 25px;
+		}
+		.fourth{
+			margin-left: 25px;
+			.text{
+				display: flex;
+				p{
+					width: 80px !important;
+					margin-right: 3px;
+				}
+			}
+		}
+		.fifth{
+			margin-left: 25px;
+			margin-top: 25px;
 		}
 	}
 }

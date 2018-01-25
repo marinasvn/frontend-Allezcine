@@ -11,7 +11,7 @@ body {
     margin-bottom: 50px; }
     body #sub div input {
       width: 500px;
-      margin: 0 10px 0 485px;
+      margin: 0 10px 0 450px;
       align-items: center;
       border-radius: 2px; }
     body #sub div button {
@@ -69,9 +69,16 @@ body {
     color: #D1D1D1;
     letter-spacing: 2px; }
   body .fourth img {
-    width: 100px;
-    height: 50px;
-    padding-bottom: 5px; }
+    width: 80px;
+    height: 30px;
+    padding-bottom: 5px;
+    margin-top: 5px; }
+  body .fourth .text {
+    padding-right: 0; }
+    body .fourth .text p {
+      padding-right: 0;
+      margin: 0;
+      color: #8D8D8D; }
   body .fifth h3 {
     margin-top: -17px;
     padding-bottom: 8px;
@@ -84,5 +91,45 @@ body {
     width: 60px;
     height: 80px;
     padding: 0; }
+  body .sixth {
+    margin-top: 50px;
+    height: 50px;
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424; }
+  body .seventh {
+    color: #D1D1D1;
+    text-align: center; }
+    body .seventh .icon {
+      margin-left: 12px; }
+      body .seventh .icon i {
+        margin-right: 10px;
+        color: #D1D1D1;
+        border: 1px solid #D1D1D1;
+        padding: 5px; }
+        body .seventh .icon i:nth-child(1) {
+          padding-right: 10px; }
+
+@media (max-width: 460px) {
+  body #sub h3 {
+    margin-left: 50px;
+    text-align: left; }
+  body #sub input {
+    margin-left: 25px !important; }
+  body .first {
+    margin-left: 25px; }
+  body .second {
+    margin-left: 25px; }
+  body .third {
+    margin-left: 25px; }
+  body .fourth {
+    margin-left: 25px; }
+    body .fourth .text {
+      display: flex; }
+      body .fourth .text p {
+        width: 80px !important;
+        margin-right: 3px; }
+  body .fifth {
+    margin-left: 25px;
+    margin-top: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
