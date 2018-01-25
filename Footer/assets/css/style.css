@@ -5,7 +5,7 @@ body {
   font-family: 'Raleway', sans-serif; }
   body #sub h3 {
     text-align: center;
-    color: red; }
+    color: #FF1A3D; }
   body #sub div {
     display: flex;
     margin-bottom: 50px; }
@@ -16,8 +16,8 @@ body {
       border-radius: 2px; }
     body #sub div button {
       margin-right: 350px;
-      background-color: red;
-      border-color: red;
+      background-color: #FF1A3D;
+      border-color: #FF1A3D;
       border-radius: 2px; }
   body .first h3 {
     padding-bottom: 8px;
@@ -86,7 +86,7 @@ body {
     color: white;
     font-weight: bold; }
     body .fifth h3 span {
-      color: red; }
+      color: #FF1A3D; }
   body .fifth .one img {
     width: 60px;
     height: 80px;
