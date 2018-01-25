@@ -209,9 +209,10 @@ body {
 /*-----shop-------------*/
 #symbols {
   display: flex;
-  align-content: flex-end; }
+  justify-content: flex-end;
+  padding-right: 15px !important; }
   #symbols p {
-    padding: 10px;
+    padding: 5px 10px;
     background-color: #000;
     color: #fff; }
 
@@ -235,18 +236,20 @@ body {
   margin-right: 0 !important; }
 
 #shop .gallery .affiche {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 #shop .gallery img {
-  width: 175px;
-  height: 250px;
+  width: 205px;
+  height: 278px;
   margin-left: 5px; }
 
 #shop .description {
-  width: 175px;
+  width: 205px;
   margin: 0;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  margin-left: 5px !important;
+  margin-bottom: 10px !important;
   background-color: #D9D9D9;
   height: 40px;
   font-size: 12px;
@@ -276,6 +279,8 @@ body {
 #shop .ba .info {
   padding-left: 5px;
   background-color: #151515;
+  margin-top: -15px;
+  height: 256px;
   color: white; }
 
 #shop .ba .info h4 {

@@ -131,7 +131,122 @@ $(document).ready(function() {
 });
 
 
+// SHOP
 
+$(document).ready(function() {
+    /*function trailer(title, src) {
+        this.title = title;
+        this.src = src;
+    }*/
+    
+    var affiche = [
+        {
+            title: 'Lego Batman',
+            src: "assets/images/batman.jpg",
+            date: 2017,
+            genre: "comedie",
+            price: 8.99,
+            url: "https://www.youtube.com/embed/9mznUFqFy74",
+            about: "bla1"
+        },
+        {
+            title: 'Hostel',
+            src: "assets/images/hostel.jpg",
+            date: 2005,
+            genre: "thriller",
+            price: 5.99,
+            url: "https://www.youtube.com/embed/cVBdQiUHhZI",
+            about: "bla2"
+        },
+        {
+            title: 'Inception',
+            src: "assets/images/inception.jpg",
+            date: 2010,
+            genre: "scifi",
+            price: 6.99,
+            url: "https://www.youtube.com/embed/CPTIgILtna8",
+            about: "bla3"
+        },
+        {
+            title: 'Intouchables',
+            src: "assets/images/intouchables.jpg",
+            date: 2011,
+            genre: "comedie",
+            price: 5.99,
+            url: "https://www.youtube.com/embed/cXu2MhWYUuE",
+            about: "bla4"
+        },
+        {
+            title: 'Le patient anglais',
+            src: "assets/images/patient.jpg",
+            date: 1996,
+            genre: "dramatique",
+            price: 3.99,
+            url: "https://www.youtube.com/embed/FguRZAv_LS4",
+            about: "bla5"
+        },
+        {
+            title: 'Seven',
+            src: "assets/images/seven.jpg",
+            date: 1995,
+            genre: "thriller",
+            price: 3.99,
+            url: "https://www.youtube.com/embed/BdWja7bkV7E",
+            about: "bla6"
+        },
+        {
+            title: 'Shutter Island',
+            src: "assets/images/shutter.jpg",
+            date: 2010,
+            genre: "thriller",
+            price: 5.99,
+            url: "https://www.youtube.com/embed/5iaYLCiq5RM",
+            about: "bla7"
+        },
+        {
+            title: 'Star-Wars V',
+            src: "assets/images/star.jpg",
+            date: 1980,
+            genre: "scifi",
+            price: 5.99,
+            url: "https://www.youtube.com/embed/Z7B0vfamFTE>",
+            about: "bla8"
+        }
+
+    ];
+    
+    //Shop movie generation pictures
+       var k = affiche.sort(function(a, b){return 0.5 - Math.random()});
+    
+    $(".affiche").html(function(){
+
+        
+       for( var i=0 ; i < affiche.length; i++) {
+                  
+            $(".affiche").append("<div class='block-gris'><img src="+k[i].src+"><div class='description row'><p class='col-lg-12'>"+k[i].title+"</p><p>"+k[i].date+"</p><p>"+k[i].price+"</p></div></div>");
+        }
+ 
+    });
+    $("#trailer").html(function() {
+        $("#trailer").append("<iframe width='615' height='400' src='"+k[0].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[0].title+"</h4><p><span>Story Line :</span>"+k[0].about+"</p><br/><p><span>Release on :</span>"+k[0].date+"</p><br/><p><span>Genres :</span>"+k[0].genre+"</p><br/><p><span>Price :</span>"+k[0].price+"</p></div>"
+        );
+    });
+    
+    
+    
+    //Shop clic image generation trailer
+    $(".block-gris img").click(function(){
+                for (i=0 ; i < affiche.length; i++) {
+                    if ($(this).attr("src") == k[i].src) {
+                        $("#trailer").html(" ");
+                        $("#trailer").append("<iframe width='615' height='400' src='"+k[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[i].title+"</h4><p><span>Story Line :</span>"+k[i].about+"</p><br/><p><span>Release on :</span>"+k[i].date+"</p><br/><p><span>Genres :</span>"+k[i].genre+"</p><br/><p><span>Price :</span>"+k[i].price+"</p></div>"
+                        );
+                    }
+                    
+                }
+    });
+    
+});
 
 
 
