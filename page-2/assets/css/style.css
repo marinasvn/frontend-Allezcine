@@ -92,7 +92,7 @@ h2 {
     color: white !important;
     border-radius: 2px; }
   .nav-item .dropdown-menu a {
-    background-color: white;
+    background-color: white !important;
     color: black !important; }
   .nav-item .dropdown-menu a:hover {
     color: #33BF3A !important; }
