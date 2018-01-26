@@ -1,220 +1,37 @@
-h2 {
-  color: white;
-  font-family: 'Anton', sans-serif;
-  font-size: 55px; }
+/*
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 280 of /home/user/Documents/frontend-Allezcine/page-2/assets/scss/style.scss
 
-.jumbotron {
-  padding: 0; }
-  .jumbotron nav {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    max-width: 100%; }
-  .jumbotron .carousel-item img {
-    width: 100vw;
-    height: 600px; }
+275: 
+276: h3{ 
+277: 	span {
+278:     color: #FF1A3D;
+279: 	}
+280: }
 
-.overlay {
-  font-family: 'Anton', sans-serif;
-  margin-left: 25%;
-  color: #fff;
-  position: absolute;
-  z-index: 12;
-  top: 30%;
-  width: 50vw;
-  text-align: center; }
-  .overlay span {
-    color: #33BF3A; }
-  .overlay h3 {
-    color: white;
-    font-size: 50px; }
-  .overlay h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px; }
-  .overlay .quote {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px; }
-  .overlay input {
-    background-color: #33BF3A;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    margin-left: 43%; }
-
-.lay {
-  position: absolute;
-  z-index: 12;
-  width: 100%;
-  text-align: center; }
-  .lay span {
-    color: #33BF3A;
-    font-size: 18px;
-    font-weight: bold; }
-  .lay ul {
-    margin-left: 25px; }
-    .lay ul .search {
-      margin-left: 250px;
-      margin-top: 5px;
-      width: 250px;
-      border-radius: 50%;
-      height: 25px; }
-      .lay ul .search span {
-        background-color: black;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        padding-right: 6px;
-        color: white;
-        opacity: 0.5; }
-      .lay ul .search input {
-        border-radius: 50px;
-        color: white;
-        background-color: black;
-        border: none;
-        opacity: 0.5; }
-
-.last a {
-  background-color: transparent !important; }
-
-.nav-item {
-  font-family: 'Anton', sans-serif; }
-  .nav-item #act {
-    color: #33BF3A !important;
-    background-color: transparent !important; }
-  .nav-item a {
-    padding: 5px;
-    background-color: #33BF3A;
-    margin-right: 5px;
-    color: white !important;
-    border-radius: 2px; }
-  .nav-item .dropdown-menu a {
-    background-color: white !important;
-    color: black !important; }
-  .nav-item .dropdown-menu a:hover {
-    color: #33BF3A !important; }
-
-.opacity {
-  width: 101vw;
-  height: 101vh;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  z-index: 999;
-  position: absolute; }
-
-#border {
-  display: flex;
-  background-color: #33BF3A;
-  font-size: 15px; }
-  #border p {
-    padding: 0px 0px 0px 25px;
-    margin: 7px 0;
-    color: white; }
-  #border #first {
-    background-color: black;
-    border: none;
-    font-size: 15px;
-    margin: 5px 0 5px 10px;
-    padding: 2px 10px; }
-    #border #first:hover {
-      background-color: white;
-      color: #33BF3A; }
-
-#close {
-  position: absolute; }
-
-input {
-  display: block;
-  border: none;
-  color: #000;
-  padding: 10px; }
-
-#newPass {
-  display: none; }
-
-#signUp {
-  display: none; }
-
-#signIn, #new-account {
-  font-size: 0.9rem !important; }
-
-#email {
-  display: none; }
-
-input[name="login"], input[name="pass"], #email {
-  margin-bottom: 10px !important;
-  border: 1px solid #000;
-  margin: 0 auto;
-  width: 50%; }
-
-input[type="submit"] {
-  width: 25%;
-  display: inline-block; }
-
-a {
-  text-decoration: none; }
-
-label[for="conditions"] {
-  display: none;
-  width: 50%;
-  margin: 15px auto;
-  align-items: center; }
-  label[for="conditions"] input[type="checkbox"] {
-    margin-right: 5px; }
-
-label[for="connect"] {
-  display: flex;
-  width: 50%;
-  margin: 15px auto;
-  align-items: center; }
-  label[for="connect"] input[type="checkbox"] {
-    margin-right: 5px; }
-
-#forgot {
-  color: #000;
-  position: absolute;
-  top: 56%;
-  right: 30%;
-  font-size: 0.7rem; }
-
-/*-------------------------------*/
-.modal-content {
-  margin: 0 auto;
-  padding: 5% 5%; }
-
-.modal-content h3 {
-  width: 50%;
-  color: #000;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 3.4em;
-  font-weight: 300;
-  position: relative; }
-
-.modal-content p {
-  color: #000;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 20px; }
-
-.submit, #new-account, #newPass {
-  background-color: #FF1A3B;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  cursor: pointer;
-  border: none;
-  padding: 10px; }
-
-#btns {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: 0 auto; }
-
-h3 span {
-  color: #FF1A3D; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/home/user/Documents/frontend-Allezcine/page-2/assets/scss/style.scss:280
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/usr/share/koala/bin/sass:22:in `load'
+/usr/share/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 280 of /home/user/Documents/frontend-Allezcine/page-2/assets/scss/style.scss\A \A 275: \A 276: h3{ \A 277: 	span {\A 278:     color: #FF1A3D;\A 279: 	}\A 280: }"; }
