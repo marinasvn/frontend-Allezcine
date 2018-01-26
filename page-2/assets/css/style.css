@@ -20,7 +20,7 @@ h2 {
   color: #fff;
   position: absolute;
   z-index: 12;
-  top: 30%;
+  top: 40%;
   width: 50vw;
   text-align: center; }
   .overlay span {
@@ -211,5 +211,9 @@ label[for="connect"] {
 
 h3 span {
   color: #FF1A3D; }
+
+#deroule a {
+  color: #33BF3A !important;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
