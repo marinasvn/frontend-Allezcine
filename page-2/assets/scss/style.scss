@@ -117,22 +117,23 @@ h2{
 		color: white!important;
 		border-radius: 2px;
 	}
-
-
-.dropdown-menu {
-    background-color: #fff;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    transform: translate3d(0px, 38px, 0px) !important;
-    .dropdown-item {
-        background-color: black;
-        margin-top: 3px;
-        &:hover {
-            background-color: red;
-        }
-    }
 }
+
+
+// .dropdown-menu {
+//     background-color: #fff;
+//     border: none;
+//     border-radius: 0;
+//     padding: 0;
+//     transform: translate3d(0px, 38px, 0px) !important;
+//     .dropdown-item {
+//         background-color: black;
+//         margin-top: 3px;
+//         &:hover {
+//             background-color: red;
+//         }
+//     }
+// }
 
 
 
