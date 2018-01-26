@@ -20,7 +20,7 @@ h2 {
   color: #fff;
   position: absolute;
   z-index: 12;
-  top: 40%;
+  top: 30%;
   width: 50vw;
   text-align: center; }
   .overlay span {
@@ -42,7 +42,9 @@ h2 {
     border: none;
     border-radius: 2px;
     font-size: 12px;
-    padding: 5px 10px 5px 10px; }
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    margin-left: 43%; }
 
 .lay {
   position: absolute;
@@ -87,7 +89,8 @@ h2 {
     padding: 5px;
     background-color: #33BF3A;
     margin-right: 5px;
-    color: white !important; }
+    color: white !important;
+    border-radius: 2px; }
   .nav-item .dropdown-menu a {
     background-color: white;
     color: black !important; }
@@ -97,36 +100,27 @@ h2 {
 .opacity {
   width: 101vw;
   height: 101vh;
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 999;
   position: absolute; }
 
 #border {
   display: flex;
-  background-color: #33BF3A; }
+  background-color: #33BF3A;
+  font-size: 15px; }
   #border p {
     padding: 0px 0px 0px 25px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 7px 0;
     color: white; }
   #border #first {
-    margin-top: 5px;
     background-color: black;
-    color: white;
-    font-size: 12px;
     border: none;
-    width: 50px;
-    height: 25px;
-    margin-right: 5px;
-    margin-left: 20px; }
-  #border #second {
-    margin-left: 0;
-    margin-top: 5px;
-    background-color: black;
-    color: white;
-    font-size: 12px;
-    border: none;
-    height: 25px; }
+    font-size: 15px;
+    margin: 5px 0 5px 10px;
+    padding: 2px 10px; }
+    #border #first:hover {
+      background-color: white;
+      color: #33BF3A; }
 
 #close {
   position: absolute; }
