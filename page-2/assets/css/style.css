@@ -182,7 +182,6 @@ label[for="connect"] {
 .modal-content h3 {
   width: 50%;
   color: #000;
-  margin: 0 auto;
   text-align: center;
   font-size: 3.4em;
   font-weight: 300;
@@ -195,7 +194,7 @@ label[for="connect"] {
   margin-bottom: 20px; }
 
 .submit, #new-account, #newPass {
-  background-color: #FF1A3B;
+  background-color: #33BF3A;
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -209,8 +208,12 @@ label[for="connect"] {
   width: 50%;
   margin: 0 auto; }
 
-h3 span {
-  color: #FF1A3D; }
+h3 {
+  margin-left: 70px; }
+  h3 span {
+    color: #33BF3A;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px; }
 
 #deroule a {
   color: #33BF3A !important;

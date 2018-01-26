@@ -221,7 +221,6 @@ label[for="connect"] {
 .modal-content h3 {
     width: 50%;
     color: #000;
-	margin: 0 auto;
 	text-align: center;
 	font-size: 3.4em;
 	font-weight: 300;
@@ -236,7 +235,7 @@ label[for="connect"] {
 }
 
 .submit, #new-account, #newPass {
-    background-color: #FF1A3B;
+    background-color: $color-jumbo;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
@@ -255,8 +254,11 @@ label[for="connect"] {
 
 
 h3{ 
+	margin-left: 70px;
 	span {
-    color: #FF1A3D;
+    color: $color-jumbo;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
 	}
 }
 
