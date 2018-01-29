@@ -1,0 +1,64 @@
+#shop .symbol {
+  display: flex;
+  justify-content: space-between; }
+  #shop .symbol h2 {
+    border-left: 3px solid red;
+    margin-left: 25px; }
+  #shop .symbol div {
+    display: flex; }
+    #shop .symbol div .symb1 {
+      background-color: black;
+      color: white;
+      width: 20px;
+      height: 20px; }
+    #shop .symbol div .symb2 {
+      background-color: black;
+      color: white;
+      width: 20px;
+      height: 20px;
+      margin-left: 5px; }
+#shop .row {
+  margin-right: 0 !important; }
+#shop .gallery .affiche {
+  display: flex; }
+#shop .gallery img {
+  width: 175px;
+  height: 250px;
+  margin-left: 5px; }
+#shop .description {
+  width: 175px;
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: #D9D9D9;
+  height: 40px;
+  font-size: 12px;
+  padding: 0 10px; }
+  #shop .description p:nth-child(1) {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0; }
+  #shop .description p:nth-child(2) {
+    padding: 0; }
+  #shop .description p:nth-child(3) {
+    padding: 0 10px;
+    text-align: right;
+    color: #FF1A3D;
+    padding-right: 2px; }
+#shop .ba {
+  padding-left: 0; }
+  #shop .ba img {
+    width: 520px;
+    height: 400px; }
+  #shop .ba .info {
+    padding-left: 5px;
+    background-color: #151515;
+    color: white; }
+    #shop .ba .info h4 {
+      color: #FF1A3B; }
+    #shop .ba .info p {
+      font-size: 13px; }
+      #shop .ba .info p span {
+        color: #FF1A3B; }
+
+/*# sourceMappingURL=style.css.map */

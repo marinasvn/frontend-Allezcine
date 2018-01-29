@@ -1,3 +1,17 @@
+// BTN VERS LE HAUT
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+        $("#cRetour").addClass('cVisible');
+        $("#cRetour").removeClass('cInvisible');
+    } else {
+        $("#cRetour").addClass('cInvisible');
+        $("#cRetour").removeClass('cVisible');
+    }
+  });
+});
+
 // slider
 
 $(document).ready(function() {
@@ -142,7 +156,7 @@ $(document).ready(function() {
     var affiche = [
         {
             title: 'Lego Batman',
-            src: "assets/images/batman.jpg",
+            src: "assets/img/batman.jpg",
             date: 2017,
             genre: "comedie",
             price: 8.99,
@@ -151,7 +165,7 @@ $(document).ready(function() {
         },
         {
             title: 'Hostel',
-            src: "assets/images/hostel.jpg",
+            src: "assets/img/hostel.jpg",
             date: 2005,
             genre: "thriller",
             price: 5.99,
@@ -160,7 +174,7 @@ $(document).ready(function() {
         },
         {
             title: 'Inception',
-            src: "assets/images/inception.jpg",
+            src: "assets/img/inception.jpg",
             date: 2010,
             genre: "scifi",
             price: 6.99,
@@ -169,7 +183,7 @@ $(document).ready(function() {
         },
         {
             title: 'Intouchables',
-            src: "assets/images/intouchables.jpg",
+            src: "assets/img/intouchables.jpg",
             date: 2011,
             genre: "comedie",
             price: 5.99,
@@ -178,7 +192,7 @@ $(document).ready(function() {
         },
         {
             title: 'Le patient anglais',
-            src: "assets/images/patient.jpg",
+            src: "assets/img/patient.jpg",
             date: 1996,
             genre: "dramatique",
             price: 3.99,
@@ -187,7 +201,7 @@ $(document).ready(function() {
         },
         {
             title: 'Seven',
-            src: "assets/images/seven.jpg",
+            src: "assets/img/seven.jpg",
             date: 1995,
             genre: "thriller",
             price: 3.99,
@@ -196,7 +210,7 @@ $(document).ready(function() {
         },
         {
             title: 'Shutter Island',
-            src: "assets/images/shutter.jpg",
+            src: "assets/img/shutter.jpg",
             date: 2010,
             genre: "thriller",
             price: 5.99,
@@ -205,7 +219,7 @@ $(document).ready(function() {
         },
         {
             title: 'Star-Wars V',
-            src: "assets/images/star.jpg",
+            src: "assets/img/star.jpg",
             date: 1980,
             genre: "scifi",
             price: 5.99,
