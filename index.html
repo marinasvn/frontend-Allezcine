@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://use.fontawesome.com/413d22ea98.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald|Roboto" rel="stylesheet">
-    
-    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
@@ -24,45 +23,36 @@
    
     </div>
    <section id="home">
-        <div class="lay">
-		    <nav class="navbar navbar-expand-lg navbar-light">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#">
-			<h2 id="titre"><span>ALLEZ</span>CINE!</h2>
-			</a>
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		   		<ul class="navbar-nav">
-		      		<li class="nav-item active">
-		        		<a id="act" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      		</li>
-		      		<li class="nav-item dropdown">
-		        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre</a>
-		   				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          			<a class="dropdown-item" href="#">Action</a>
-		          			<a class="dropdown-item" href="#">Drame</a>
-		        			<a class="dropdown-item" href="#">Fiction</a>
-		          			<a class="dropdown-item" href="#">Comédie</a>
-		        		</div>
-		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#">Featured Movies</a>
-		      		</li>
-					<li class="nav-item">
-		        		<a class="nav-link" href="#">Featured Series</a>
-		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link disabled" href="#">Shop</a>
-		      		</li>
-					<li class="nav-item last">
-		        		<a class="nav-link disabled" href="#">Contact</a>
-		      		</li>
-		    	</ul>
-		      		<input type="search" class="input-sm form-control searching" placeholder="Recherche">
-		  	</div>
-		</nav>
-	    </div>
+       <div class="lay">
+             <nav class="menu">
+                  <a href="#home"><h2><span>ALLEZ</span>CINE</h2></a>
+                   <ul class="active">
+                        <li class="current-item"><a href="#">Home</a></li>
+                        <li id="genres">
+                            <a href="#">Genres</a>
+                            <ul id="sousMenu">
+                                <li><a href="">Actions</a></li>
+                                <li><a href="">Policiers</a></li>
+                                <li><a href="">Comédie</a></li>
+                                <li><a href="">Drame</a></li>
+                                <li><a href="">Fiction</a></li>
+                                <li><a href="">Horreur</a></li>
+                                <li><a href="">Thriller</a></li>
+                                <li><a href="">Documentaire</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#featured-movies">Featured Movies</a></li>
+                        <li><a href="#featured-series">Featured Series</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                   </ul>
+                        <a class="toggle-nav" href="#">&#9776;</a>
+                        <div class=" search input-group margin-bottom-sm">
+                            <input class="form-control" type="text" placeholder="Recherche">
+                            <span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+                        </div>
+              </nav>
+        </div>
+        
 	<div class="jumbotron">
 		<div class="overlay">
 			<h3>LATEST <span>ON</span>LINE <span>MO</span>VIES</h3>
@@ -657,12 +647,12 @@
                 <h2 class="title col-lg-8 offset-lg-1">SHOP</h2>
              </div>
              
-			<div class="row pl-1 pr-1">
+			<div class="row">
                  <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="symbols">
                     <p class="symb1">&#60;</p>
                     <p class="symb2">&#62;</p>
                 </div>
-      			<div class="gallery col-lg-7 col-md-7 col-sm-7 col-12">
+      			<div class="gallery col-lg-7 col-md-7 col-sm-12 col-12">
       				<div class="affiche">
       					<!--<div class="block-gris">
       						<img src="assets/images/batman.jpg" alt="image film">
@@ -730,7 +720,7 @@
       						</div>-->
 		    	    </div>
 		    	</div>
-    			<div class="ba col-lg-5 col-md-5 col-sm-5 col-12" id="trailer">
+    			<div class="ba col-lg-5 col-md-5 col-sm-12 col-12" id="trailer">
 					<!--<iframe width="615" height="400" src="https://www.youtube.com/embed/9mznUFqFy74" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										
 					<div class="info">
@@ -828,15 +818,15 @@
 
 					</div>
 				</div>
-				<div class="fifth col-lg-4 offset-lg-1 col-md-11 col-sm-8 offset-sm-1 col-7">
+				<div class="fifth col-lg-3 offset-lg-1 col-md-11 col-sm-8 offset-sm-1 col-7">
 					<h3><span>ALLEZ</span>CINE</h3>
-					<div class="one">
-						<img src="assets/img/batman.jpg">
+					<div class="one" id="footerImages">
+						<!--<img src="assets/img/batman.jpg">
 						<img src="assets/img/hostel.jpg">
 						<img src="assets/img/inception.jpg">
 						<img src="assets/img/intouchables.jpg">
 						<img src="assets/img/patient.jpg">
-						<img src="assets/img/seven.jpg">					
+						<img src="assets/img/seven.jpg">-->					
 					</div>
 				</div>
 			</div>
@@ -910,6 +900,13 @@
         </div>
   </div>
    <!--Fin de Modal 2-->
+   
+   <!-- Modal 3 Cookies -->
+  <div id="modalCookies">
+			<p>Nous utilisons des cookies pour optimiser votre expérience sur notre site. En utilisant notre site vous acceptez que nous appliquions des cookies.</p>
+            <a href="#" id="OK">OK</a>           
+  </div>
+   <!--Fin de Modal 2-->
     
     <!--btn vers le haut-->
        <div>
@@ -926,7 +923,24 @@
     <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/isotope.pkgd.min.js"></script>
     <script src="./assets/js/script.js"></script>
-
+    
+    <script>
+        //NAV TOGGLE
+            $(document).ready(function() {
+                $('.toggle-nav').click(function(e) {
+                $(this).toggleClass('active');
+                $('.menu ul').toggleClass('active');
+                e.preventDefault();
+                });
+                
+                $("#genres").mouseenter(function() {
+                    $("#sousMenu").css('display','flex');
+                });
+                $("#genres").mouseleave(function() {
+                    $("#sousMenu").css('display','none');
+                });
+            });
+    </script>
 
 </body>
 </html>

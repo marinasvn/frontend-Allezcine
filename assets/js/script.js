@@ -105,6 +105,12 @@ $(window).on('load',function(){
     $("#modalLoad #blur a").click(function() {
         $("#modalLoad").css('display','none');
     });
+    
+    $("#modalCookies").css('display','flex');
+    $("#modalCookies a").click(function() {
+        $("#modalCookies").css('display','none');
+    });
+    
 });
 
 
@@ -239,10 +245,19 @@ $(document).ready(function() {
                   
             $(".affiche").append("<div class='block-gris'><img src="+k[i].src+"><div class='description row'><p class='col-lg-12'>"+k[i].title+"</p><p>"+k[i].date+"</p><p>"+k[i].price+"</p></div></div>");
         }
+        
  
     });
+    
+    $("#footerImages").html(function() {
+        for( var j=0 ; j < affiche.length - 2; j++) {
+                  
+            $("#footerImages").append("<img src="+k[j].src+">");
+        }
+    });
+    
     $("#trailer").html(function() {
-        $("#trailer").append("<iframe width='615' height='400' src='"+k[0].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[0].title+"</h4><p><span>Story Line :</span>"+k[0].about+"</p><br/><p><span>Release on :</span>"+k[0].date+"</p><br/><p><span>Genres :</span>"+k[0].genre+"</p><br/><p><span>Price :</span>"+k[0].price+"</p></div>"
+        $("#trailer").append("<iframe width='100%' height='400' src='"+k[0].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[0].title+"</h4><p><span>Story Line :</span>"+k[0].about+"</p><p><span>Release on :</span>"+k[0].date+"</p><p><span>Genres :</span>"+k[0].genre+"</p><p><span>Price :</span>"+k[0].price+"</p></div>"
         );
     });
     
@@ -261,9 +276,6 @@ $(document).ready(function() {
     });
     
 });
-
-
-
 
 
 
