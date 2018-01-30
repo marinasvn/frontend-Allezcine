@@ -74,16 +74,42 @@ $(document).ready(function () {
         $("*[id^='filter']").removeClass('active');
         $("#filter-all").addClass('active');
     });
-    $("#filter-actions").click(function() {  
-        $container.isotope({ filter: '.actions' });
+    $("#filter-action").click(function() {  
+        $container.isotope({ filter: '.action' });
         $("*[id^='filter']").removeClass('active');
-        $("#filter-actions").addClass('active');
+        $("#filter-action").addClass('active');
     });
-    $("#filter-policiers").click(function() {  
-        $container.isotope({ filter: '.policiers' });
+    $("#filter-policier").click(function() {  
+        $container.isotope({ filter: '.policier' });
         $("*[id^='filter']").removeClass('active');
-        $("#filter-policiers").addClass('active');
+        $("#filter-policier").addClass('active');
     });
+    $("#filter-comedie").click(function() {  
+        $container.isotope({ filter: '.comedie' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-comedie").addClass('active');
+    });
+    $("#filter-drame").click(function() {  
+        $container.isotope({ filter: '.drame' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-drame").addClass('active');
+    });
+    $("#filter-fiction").click(function() {  
+        $container.isotope({ filter: '.fiction' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-fiction").addClass('active');
+    });
+    $("#filter-horreur").click(function() {  
+        $container.isotope({ filter: '.horreur' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-horreur").addClass('active');
+    });
+    $("#filter-thriller").click(function() {  
+        $container.isotope({ filter: '.thriller' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-thriller").addClass('active');
+    });
+
 
 });
 
@@ -93,8 +119,8 @@ $(document).ready(function () {
     /*$container.isotope({itemSelector : 'div'});*/
 
     $("#filter-all-2").click(function() { $container.isotope({ filter: '.all' });});
-    $("#filter-actions-2").click(function() {  $container.isotope({ filter: '.actions' });});
-    $("#filter-policiers-2").click(function() {  $container.isotope({ filter: '.policiers' });});
+    $("#filter-actions-2").click(function() {  $container.isotope({ filter: '.action' });});
+    $("#filter-policiers-2").click(function() {  $container.isotope({ filter: '.policier' });});
 
 });
 
@@ -268,7 +294,7 @@ $(document).ready(function() {
                 for (i=0 ; i < affiche.length; i++) {
                     if ($(this).attr("src") == k[i].src) {
                         $("#trailer").html(" ");
-                        $("#trailer").append("<iframe width='615' height='400' src='"+k[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[i].title+"</h4><p><span>Story Line :</span>"+k[i].about+"</p><br/><p><span>Release on :</span>"+k[i].date+"</p><br/><p><span>Genres :</span>"+k[i].genre+"</p><br/><p><span>Price :</span>"+k[i].price+"</p></div>"
+                        $("#trailer").append("<iframe width='100%' height='400' src='"+k[i].url+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe><div class='info'><h4 id='filmName'>"+k[i].title+"</h4><p><span>Story Line :</span>"+k[i].about+"</p><br/><p><span>Release on :</span>"+k[i].date+"</p><br/><p><span>Genres :</span>"+k[i].genre+"</p><br/><p><span>Price :</span>"+k[i].price+"</p></div>"
                         );
                     }
                     
