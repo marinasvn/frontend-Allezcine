@@ -118,10 +118,41 @@ $(document).ready(function () {
     var $container = $('#series');
     /*$container.isotope({itemSelector : 'div'});*/
 
-    $("#filter-all-2").click(function() { $container.isotope({ filter: '.all' });});
-    $("#filter-actions-2").click(function() {  $container.isotope({ filter: '.action' });});
-    $("#filter-policiers-2").click(function() {  $container.isotope({ filter: '.policier' });});
-
+    $("#filter-all-2").click(function() { 
+        $container.isotope({ filter: '.all-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-all-2").addClass('active');
+    });
+    $("#filter-actions-2").click(function() {
+        $container.isotope({ filter: '.actions-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-actions-2").addClass('active');
+  });
+    $("#filter-policiers-2").click(function() {
+        $container.isotope({ filter: '.policiers-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-policiers-2").addClass('active');
+  });
+    $("#filter-comedie-2").click(function() {
+        $container.isotope({ filter: '.comedie-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-comedie-2").addClass('active');
+    });
+    $("#filter-drame-2").click(function() {
+        $container.isotope({ filter: '.drame-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-drame-2").addClass('active');
+    });
+    $("#filter-fiction-2").click(function() {
+        $container.isotope({ filter: '.fiction-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-fiction-2").addClass('active');
+    });
+    $("#filter-horreur-2").click(function() {
+        $container.isotope({ filter: '.horreur-2' });
+        $("*[id^='filter']").removeClass('active');
+        $("#filter-horreur-2").addClass('active');
+    });
 });
 
 
